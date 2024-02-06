@@ -1,0 +1,267 @@
+@media screen and (max-width: 1200px) {
+    .recipes {
+        margin: 24px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .show-filter {
+        display: block;
+        margin-bottom: 35px;
+    }
+    .show-filter>button {
+        background-color: #f61010;
+    }
+    filter-menu {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 30px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .filter-box {
+        background-color: rgb(64, 136, 71);
+    }
+    .recipe-content {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .headline-content {
+        width: 400px;
+        float: left;
+        padding: 16px 32px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .headline-figure {
+        grid-template-columns: 1fr;
+    }
+    .headline-content {
+        grid-template-columns: 1fr;
+    }
+    .row-instruction {
+        flex-direction: column;
+    }
+    .recipes {
+        margin: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .h1 {
+        padding-top: 20px;
+    }
+    .kalori-container .row-kalori .col-left {
+        flex: 100%;
+        width: 100%;
+    }
+    .kalori-container .row-kalori .col-right {
+        flex: 100%;
+        width: 100%;
+    }
+    .row-kalori {
+        flex-direction: column;
+    }
+    .footer-col {
+        flex: 50%;
+    }
+    .footer-col img {
+        padding: 18% 20px;
+        width: 100%;
+    }
+    .app-bar .app-bar__menu button {
+        display: flex;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+        color: #5f7161;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+    .app-bar .app-bar__navigation {
+        background-color: #389238d9;
+    }
+    .app-bar .app-bar__navigation ul li a:hover {
+        border-bottom-width: 2px;
+        border-bottom-color: #ffffff;
+        border-bottom-style: solid;
+    }
+    .recipes {
+        margin: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .headline-content {
+        margin-top: 32px;
+        margin-right: 40px;
+        padding: 0;
+        width: fit-content;
+    }
+    .row-material {
+        flex-direction: column;
+    }
+    #home button.more {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .recipes {
+        margin: 24px;
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .hero h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-col {
+        flex: 100%;
+    }
+    .footer-col img {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 20px;
+        padding-bottom: 12px;
+        padding-top: 24px;
+    }
+    .kalori-desc {
+        width: 100%;
+    }
+    .show-filter {
+        font-size: 10pt;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    .headline {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .headline-figure {
+        width: 100%;
+    }
+    .headline-content {
+        width: fit-content;
+        margin: 0;
+    }
+    #home button.more {
+        height: 49px;
+        width: 227px;
+        font-size: 12px;
+    }
+    #home button.more a {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .hero h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 0 45px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+    .app-bar .app-bar__menu {
+        display: none;
+        justify-content: end;
+    }
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+        background: transparent;
+    }
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+        align-items: center;
+    }
+    .app-bar .app-bar__navigation ul li a {
+        display: flex;
+        align-items: center;
+        width: 125px;
+        text-align: center;
+        min-width: 44px;
+        min-height: 44px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        padding: 3em 1em;
+    }
+    .column {
+        flex: 0 0 45.33%;
+        max-width: 45.33%;
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recipes {
+        margin: 24px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .recipes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

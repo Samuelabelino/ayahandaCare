@@ -1,0 +1,224 @@
+.recipe-container {
+    display: grid;
+    gap: 20px;
+}
+
+.recipe-message {
+    text-align: center;
+}
+search-bar,
+.recipe-message,
+.show-filter,
+.filter-type {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+filter-menu {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow-y: auto;
+}
+
+filter-menu.open {
+    display: block;
+}
+
+/*
+* filter-search
+*/
+.show-filter {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    display: none;
+}
+
+.show-filter button {
+    border: none;
+    align-items: center;
+    background-color: white;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.show-filter button:hover {
+    color: #3b8043;
+}
+
+.show-filter button span {
+    color: #cc704b;
+}
+
+/*
+* recipe-item-template
+*/
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.recipe-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+}
+
+#recipes .recipe-box {
+    text-align: center;
+    max-height: 550px;
+    position: relative;
+}
+
+#recipes .recipe-box img {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#recipes .recipe-box .food-info {
+    padding: 15px 15px 0 15px;
+}
+
+#recipes .recipe-box .food-calories {
+    background-color: red;
+    color: white;
+    line-height: 40px;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+}
+
+.recipe-box .food-info button {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px;
+    background-color: white;
+    font-weight: 400;
+    margin: 5px;
+    border-radius: 5px;
+    border: #fff;
+}
+
+.food-info h5 {
+    font-size: 12pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.health-fact {
+    box-shadow: 0px 0px 4px #5ab964;
+}
+
+.serve-fact {
+    box-shadow: 0px 0px 4px #e6d013;
+}
+/*
+* bookmark-template
+*/
+
+.bookmark-container {
+    margin: 56px 86px;
+}
+
+.bookmark-container h2 {
+    font-family: "Comfortaa", cursive;
+    padding: 10px 0;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 30px;
+}
+
+.bookmark-container h4 {
+    font-size: 12pt;
+    padding: 10px 15px;
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 30px;
+    max-width: 500px;
+    margin-bottom: 300px;
+}
+.bookmark-container .food-item-info {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bookmark-container .food-item-info-first {
+    border-right: 1px solid #efead8;
+}
+
+.bookmark-container .icon-title {
+    font-size: 26px;
+    color: #5f7161;
+}
+
+/*
+* others
+*/
+
+.hide-style {
+    display: none;
+}
+
+/*
+* pagination
+*/
+
+.recipe-content-page {
+    text-align: center;
+    /* margin: 50px auto; */
+}
+
+.pagination {
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
+}
+
+.pagination button {
+    color: black;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+.pagination button:hover {
+    background-color: #3b8043;
+}
+
+.pagination button.active {
+    background-color: #5f7161;
+    color: white;
+}
+
+.pagination button.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+.pagination button:hover:not(.active) {
+    background-color: #d3d3d3;
+}
+
+.pagination button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

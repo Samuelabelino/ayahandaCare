@@ -1,0 +1,125 @@
+.headline {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.headline-figure {
+    overflow: hidden;
+}
+
+.headline-figure img {
+    width: 100%;
+}
+
+.headline-content {
+    float: left;
+    padding: 16px;
+}
+
+.headline-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.headline-author {
+    margin: 10px 0 10px 0;
+}
+
+.headline-description {
+    font-size: 16px;
+}
+
+
+/* material */
+
+#material {
+    margin: 80px auto;
+}
+
+.row-material {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background: cadetblue; */
+}
+
+.row-material .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.col .ingredients-title {
+    margin-bottom: 10px;
+}
+
+.col .equipments-title {
+    margin-bottom: 10px;
+}
+
+
+/* information */
+
+#information {
+    margin: 80px auto;
+}
+
+.row-instruction {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-evenly;
+    /* background: cadetblue; */
+}
+
+.row-instruction .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col ol li {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.col .instruction-title {
+    margin-bottom: 10px;
+}
+
+.col .nutrients-title {
+    margin-bottom: 10px;
+}
+
+.col .button {
+    margin-bottom: 10px;
+}
+
+.button .gray {
+    background: #71c279;
+    border-color: #71c279;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.button .red {
+    background: #df4c4c;
+    border-color: #df4c4c;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.button .yellow {
+    background: #f8e85e;
+    border-color: #f8e85e;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 20px;
+}

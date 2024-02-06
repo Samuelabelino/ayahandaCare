@@ -1,0 +1,102 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+.footer {
+    background-color: #cde3cd;
+    padding: 25px 30px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 10px;
+    line-height: 32px;
+}
+
+.footer-col img {
+    width: 100%;
+    padding-top: 90px;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    color: #343434;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: -10px;
+    background-color: #389238;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #939393;
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #b4b4b4;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #389238;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    background-color: #389238a4;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #939393;
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    text-align: left;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #525252f3;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}

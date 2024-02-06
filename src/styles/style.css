@@ -1,0 +1,157 @@
+@import url("./components/footer.css");
+@import url("./components/main.css");
+@import url("./components/about.css");
+@import url("./components/recipe.css");
+@import url("./components/detail.css");
+@import url("./components/bookmark.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("./components/nutrition.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    color: #424242;
+}
+
+
+/*
+  AppBar
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.skip-link {
+    font-size: medium;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    background-color: #dacbee;
+    color: black;
+    padding: 16px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.app-bar {
+    padding: 12px;
+    background-image: linear-gradient(to right, #fff, #389238);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.app-bar .app-bar__menu button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .app-bar__navigation {
+    position: absolute;
+    top: 75px;
+    left: -160px;
+    width: 160px;
+    transition: all 0.3s;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.app-bar .app-bar__navigation.open {
+    left: 0;
+}
+
+.app-bar .app-bar__navigation ul {
+    margin-bottom: 0;
+}
+
+.app-bar .app-bar__navigation ul li {
+    list-style: none;
+}
+
+.app-bar .app-bar__navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.app-bar .app-bar__navigation ul li a:hover {
+    text-shadow: 2px 2px 3px rgb(98, 97, 97);
+    transition: all 0.3s;
+}
+
+
+/*
+  Main Content
+*/
+
+main {
+    flex: 1;
+}
+
+.content {
+    margin: 50px auto;
+    min-height: 100%;
+}
+
+.skeleton {
+    user-select: none;
+    background-color: #cacaca;
+    color: #0000;
+    background-image: linear-gradient(to right, rgb(192, 192, 192), rgb(228, 228, 228));
+    background-size: 200% 100%;
+    animation: anmBg 1s linear 3;
+}
+
+@keyframes anmBg {
+    to {
+        background-position: -200% 0;
+    }
+}

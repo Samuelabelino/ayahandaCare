@@ -1,0 +1,159 @@
+h1 {
+    color: #3a3a3a;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.kalori-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.row-kalori {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kalori-container .row-kalori .col-left {
+    flex: 65%;
+    margin-right: 3rem;
+}
+
+.kalori-container .row-kalori .col-right {
+    flex: 35%;
+}
+
+.kalori-container .row-kalori .col-left .kalori-calc {
+    color: #fff;
+    background-color: #62a56238;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2.4em rgb(25 0 58 / 10%);
+}
+
+.kalori-container .row-kalori .col-left .kalori-desc {
+    color: #343434;
+    background-color: #62a56238;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2.4em rgb(25 0 58 / 10%);
+}
+
+.kalori-container .row-kalori .col-left .kalori-calc .kalori-form,
+.hint {
+    margin-top: 1rem;
+    color: #343434;
+}
+
+.kalori-container .row-kalori .col-left .kalori-calc .kalori-form .tbbb {
+    display: inline;
+}
+
+.kalori-container .row-kalori .col-right .kalori-result {
+    background: #62a56238;
+    margin-top: 2rem;
+    padding: 32px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 2.4em rgb(25 0 58 / 10%);
+}
+
+.kalori-kalkulator {
+    /* max-width: 300px; */
+    font-family: "Roboto", sans-serif;
+    padding: 47px 2px;
+}
+
+.kalori-kalkulator,
+.kalori-kalkulator * {
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.kalori-kalkulator h2 {
+    text-align: center;
+    color: #343434;
+    font-weight: 400;
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 20px;
+    font-size: 27px;
+}
+
+.kalori-kalkulator form h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+
+.kalori-kalkulator form input[type="text"] {
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid #d5dbdd;
+}
+
+.kalori-kalkulator form input[type="text"].invalid {
+    border: 1px solid red;
+}
+
+.kalori-kalculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.kalori-kalkulator form #ibuhamil {
+    margin-left: 20px;
+}
+
+.kalori-kalkulator form .tinggi,
+.kalori-kalkulator form .berat {
+    position: relative;
+}
+
+.kalori-kalkulator form .unit {
+    position: absolute;
+    right: 20px;
+    top: 57px;
+    color: #343434b3;
+}
+
+.kalori-kalkulator .hasil .calculate-btn {
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: #3f953fc8;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.kalori-kalkulator .hasil {
+    text-align: center;
+    color: #343434;
+    font-size: 18px;
+}
+
+.kalori-kalkulator .hasil .kalori {
+    color: #3f953f;
+    font-size: 38px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.kalori-kalkulator .hasil .error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.kalori-kalkulator .hasil .error-message.active {
+    display: block;
+}
